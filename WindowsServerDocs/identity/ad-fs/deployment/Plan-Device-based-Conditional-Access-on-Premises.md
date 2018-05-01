@@ -17,7 +17,7 @@ ms.technology: identity-adfs
 
 This document describes conditional access policies based on devices in a hybrid scenario where the on-premises directories are connected to Azure AD using Azure AD Connect.     
 
-## AD FS and Hybrid conditional access  
+## AD FS and Hybrid Conditional Access  
 
 AD FS provides the on premises component of conditional access policies in a hybrid scenario.  When you register devices with Azure AD for conditional access to cloud resources, the Azure AD Connect device write back capability makes device registration information available on premises for AD FS policies to consume and enforce.  This way, you have a consistent approach to access control policies for both on premises and cloud resources.  
 
@@ -26,7 +26,7 @@ AD FS provides the on premises component of conditional access policies in a hyb
 ### Types of registered devices  
 There are three kinds of registered devices, all of which are represented as Device objects in Azure AD and can be used for conditional access with AD FS on premises as well.  
 
-| |Add Work or School Account  |Azure AD Join  |Windows 10 Domian Join    
+| |Add Work or School Account  |Azure AD Join  |Windows 10 Domain Join    
 | --- | --- |--- | --- |
 |Description    |  Users add their work or school account to their BYOD device interactively.  **Note:** Add Work or School Account is the replacement for Workplace Join in Windows 8/8.1       | Users join their Windows 10 work device to Azure AD.|Windows 10 domain joined devices automatically register with Azure AD.|           
 |How users log in to the device     |  No login to Windows as the work or school account.  Login using a Microsoft account.       |   Login to Windows as the (work or school) account that registered the device.      |     Login using AD account.|      
